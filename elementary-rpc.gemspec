@@ -19,7 +19,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rack", '1.6.4'
+  spec.add_development_dependency "rake", "10.5.0"
+
 
   spec.add_dependency 'concurrent-ruby', '>= 0.7'
   spec.add_dependency 'faraday', '~> 0.9.0'
