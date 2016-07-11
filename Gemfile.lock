@@ -94,9 +94,14 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.6)
   byebug
+  concurrent-ruby (>= 0.7)
   debugger
   debugger-pry
   elementary-rpc!
+  faraday (~> 0.9.0)
+  hashie
+  lookout-statsd (~> 2.0.0)
+  net-http-persistent (~> 2.9.4)
   protobuffy!
   pry
   rake (= 10.5.0)
