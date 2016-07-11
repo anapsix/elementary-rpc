@@ -15,3 +15,12 @@ group :development do
   gem 'debugger-pry', :platform => :mri_19
   gem 'byebug', :platform => [:mri_20, :mri_21]
 end
+
+# added to make travis ci happy
+gem "bundler", "~> 1.6"
+gem "rake", "10.5.0"
+gem 'concurrent-ruby', '>= 0.7'
+gem 'faraday', '~> 0.9.0'
+gem 'net-http-persistent', '~> 2.9.4'
+gem 'lookout-statsd', '~> 2.0.0'
+gem 'hashie'
