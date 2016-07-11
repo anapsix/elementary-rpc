@@ -3,9 +3,15 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in elementary-rpc.gemspec
 gemspec
 
-gem 'rack'
 gem 'protobuffy', :github => 'lookout/protobuffy'
-gem 'hashie'
+
+if RUBY_VERSION.to_f < 2.2.2
+  gem 'rack', '< 2.0.0'
+  gem 'activesupport', '< 5.0.0'
+else
+  gem 'rack'
+  gem 'activesupport'
+end
 
 group :test do
   gem 'rspec'
