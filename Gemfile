@@ -5,6 +5,7 @@ gemspec
 
 gem 'rack'
 gem 'protobuffy', :github => 'lookout/protobuffy'
+gem 'hashie'
 
 group :test do
   gem 'rspec'
