@@ -5,7 +5,7 @@ gemspec
 
 gem 'protobuffy', :github => 'lookout/protobuffy'
 
-gem 'rake', '1.6.4'
+gem 'rack', '1.6.4'
 gem 'hashie'
 
 group :test do
